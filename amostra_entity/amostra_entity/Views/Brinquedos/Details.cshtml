@@ -1,0 +1,42 @@
+﻿@model amostra_entity.Models.Brinquedo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Brinquedo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lojaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lojaId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.criancaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.criancaId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
